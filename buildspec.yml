@@ -14,5 +14,6 @@ phases:
       - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
       - aws configure set default.region $AWS_REGION
       - aws ecs update-service --cluster <YOUR_CLUSTER_NAME> --service <YOUR_SERVICE_NAME> --force-new-deployment
+
 artifacts:
   files: "**/*" # This depends on your project structure
